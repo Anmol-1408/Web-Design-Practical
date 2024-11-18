@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo"><img src="./images/logo.png" alt="Anmol Logo" class=""></div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="signup-container">
+            <h2>Create Account</h2>
+            <form action="#" method="POST" class="signup-form">
+                
+                <!-- Full Name Field -->
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password Field -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Phone Field -->
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Sex Field -->
+                <div class="input-group radio-group">
+                    <label>Sex</label>
+                    <label for="male">
+                        <input type="radio" id="male" name="sex" value="male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="sex" value="female" required> Female
+                    </label>
+                    <label for="other">
+                        <input type="radio" id="other" name="sex" value="other" required> Other
+                    </label>
+                </div>
+
+                <!-- Date of Birth Field -->
+                <div class="input-group dob-group">
+                    <label for="dob">Date of Birth</label>
+                    <select name="dob_day" id="dob_day" required>
+                        <option value="">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="dob_month" id="dob_month" required>
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select name="dob_year" id="dob_year" required>
+                        <option value="">Year</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+
+                <!-- Languages Known -->
+                <div class="input-group checkbox-group">
+                    <label>Languages Known</label>
+                    <label><input type="checkbox" name="languages" value="english"> English</label>
+                    <label><input type="checkbox" name="languages" value="telugu"> Telugu</label>
+                    <label><input type="checkbox" name="languages" value="hindi"> Hindi</label>
+                    <label><input type="checkbox" name="languages" value="tamil"> Tamil</label>
+                </div>
+
+                <!-- Address Field -->
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 MySite. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to toggle the mobile menu
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navList = document.querySelector('.nav-list');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
