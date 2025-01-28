@@ -1,0 +1,57 @@
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('./images/bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header h1, h3 {
+    font-size: 2.5em;
+    color: #333;
+}
+header h3 {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    font-size: 1.5rem;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa0D76193pXhHbqgVPm5RR3YCzunxNzkC4Q&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    color: #e6d9d9;
+    height: 200px;
+}
+
+a:link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6f42c1;
+    text-decoration: none;
+}
+
+a:active {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fd7e14;
+}
